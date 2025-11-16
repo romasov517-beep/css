@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+<a href="index.html">Главная страница</a><br>
+<div class="header">
+                 <a href="#about" >О проекте</a>
+                 <a href="#gallery">Галерея </a>
+                 <a href="#Plan">Планирование</a>
+                 <a href="#сontakt">Контакты</a>
+</div>
+ <div class="header0"> 
+  
+                 <span id="about"><h3 class="header1">О проекте</h3></span>
+                 <p>Путешествие — передвижение по какой-либо территории или акватории с целью их изучения, а также с общеобразовательными, познавательными, спортивными и другими целями. <br>Путешествие может быть совершено пешком, на велосипеде, в автомобиле, поезде, лодке, автобусе, самолёте, корабле или другими способами. </p>
+ </div>
+<div class="sechion">
+                 <h3 class="header1">Популярные направления</h3><br>
+                 <h4 class="header1">Топ-5 направлений для путешествий по России :</h4>
+                 <ol>
+                       <li>Озеро Байкал</li>
+                      <li>Камчатка</li>
+                      <li>Золотое Кольцо России</li>
+                      <Li>Алтай </Li>
+                      <li>Калининградская область</li>
+                 </ol>
+            <h4 class="header1">Сравнение направлений</h4>
+            <table >
+                       <thead>
+                         <tr>
+                           <th class="table1">Направление</th>
+                           <th class="table1" >Лучшее время для посищения</th>
+                           <th class="table1">Средняя стоимость поездки</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      
+                       <tr>
+                           <td>Озеро Байкал</td>
+                           <td>Июль-Август</td>
+                           <td>30 000 руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Камчатка</td>
+                           <td>Июль-Сентябрь</td>
+                           <td>70 000 руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Золотое Кольцо</td>
+                           <td>Июль-Апрель</td>
+                           <td>20 000 руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Алтай</td>
+                           <td>Сентябрь-Август</td>
+                           <td>50 000 руб.</td>
+                        </tr>
+              </table>
+</div>
+ <div class="header2" >
+                
+                         <span id="gallery"><h2 class="header1">Галерея</h2></span>
+                         <h4 class="header1">Озеро Байкал</h4>
+                         <img src= "байкал/7d7307961a238e1e8e7fd63d9107593b.jpg"height="260px" >
+                         <p>озеро Байкал самое глубокое озеро в мире.</p>
+                         <h4 class="header1">Камчатка</h4>
+                         <img src="байкал/Камчатка.jpeg" height="300px">
+                         <p>на Камчатке много животных</p>
+                         <h4 class="header1"> Алтай</h4>
+                         <img src="байкал/алтай.jpg" height="300px">
+                         <p>на Алтае красивая природа</p>
+                         <p>Больше фотографий вы можите найти на наших ресурсах:</p>
+                         <ul> 
+                         <li class="header1"><a href="https://ru.freepik.com/photos/байкал-россия">Фото Байкала</a></li>
+                          <li class="header1"><a href="https://ru.freepik.com/photos/пейзажи-камчатки">Фото Камчатки</a></li>
+                           <li class="header1"><a href="https://natchen.tourister.ru/photoalbum/42770">Фото Алтая</a></li>
+                         </ul>
+    </div> 
+    
+                        
+<div class="text">
+                        <span id="Plan"><h2 class="header1">Планирование путешествий</h2></span>
+                    <form action="/submit" method="post">
+                          <label for="name"><strong>Ваше имя:</strong></label><br>
+                         <input  type="text" name="username" cols="200px"><br>
+                          
+
+                         <label  for="email"><strong>Email:</strong></label><br></textarea>
+                         <input type="email" name="email" >
+                         </form>
+                       <label for="direction"><strong>Выберите направление:</strong></label><br> 
+    <select  name="direction" id="direction">
+    <option value="">-Выберите направление-</option>
+    <option value="ru">Байкал</option>
+    <option value="us">Качтака</option>
+    <option value="gb">Алтай</option>
+    </select><br>
+
+     
+                      <label for="TIP"><strong>Тип путешествия </strong></label><br>
+                     <label for="travel1 "><strong>Индивидуальное</strong></label>
+                      <input type="radio" id="travel 1" name="travel 1" value="travel1" /><br>
+
+                   <label for="travel "><strong>Групповое</strong></label>
+                   <input type="radio" id="travel " name="travel " value="travel" /><br>
+             
+                     <label for="DOP"><strong>Дополнительные услуги</strong></label><br>
+                     <label for="checkbox "><strong>Гид</strong></label>
+                     <input type="checkbox" class="checkbox" name="name"><br>
+                     <label for="checkbox "><strong>Трансфер</strong></label>
+                     <input type="checkbox" class="checkbox" name="name" ><br>
+                     <label for="checkbox "><strong>Страховка</strong></label>
+                     <input type="checkbox" class="checkbox" name="name" ><br>
+
+                     <label  for="message"><strong>Комментарии и пожелания:</strong></label><br>
+                      <textarea class="message"  id="message" name="message" rows="4" cols="200px"></textarea><br>
+
+                       <input class="submit" type="submit" value="Отправить">
+                       <input class="reset" type="reset" value="Очистить форму">
+  </div>
+   <div class="сontakt1">
+                           <span class="сontakt" id="сontakt"><h2><strong>Контакты</strong></h2></span>
+                           <p>Свяжитесь с нами для получения дополнительной информации:</p>
+                           <ul>
+                            <li class="Tel"><strong>Телефон:</strong>
+                            <strong class="Tel3"><ins>+7(902)302-75-27<ins></ins></strong>
+                            </li>
+                            <li><strong>Email:<ins></strong>
+                              <strong class="Tel2"><ins>37@mail.ru</ins></strong>
+                            </li> 
+                            <li><strong>Россия.Москва</strong></li> 
+                           </ul>
+                          
+  </div>
+  <div class="vault">
+    <p class="vault1">Путешествия по России.Все права защищены.2025 год.</p>
+  </div>
+</body>
+</html>
+
